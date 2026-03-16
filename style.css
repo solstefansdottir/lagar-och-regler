@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?famili-Pacifico');
+body{
+    background-color: beige;
+
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px; 
+
+}
+
+.Upphov, .GDPR, .Säkerhet, .Elektroniskt {
+   text-align: left;
+   border-radius: 20px;
+   border-style: solid;
+   margin-left: left;
+   margin-right: auto;
+   max-width: 40%;
+   padding: 1px 1px 1px 8px;
+   background-color: azure;
+   border-color: darkslategray;
+   margin-top: 10px;
+}
+
+nav a{text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+header, main
+{
+    background-color: cadetblue;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 100px;
+}
+
+nav li {display: inline;
+    margin-left: 10px;}
+
+h1, h2{
+    font-family: 'Times New Roman', Times, serif, cursive;
+}
+
+main{
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+
+@media only screen and (max-width : 800px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        text-align: center;
+        background-color: beige;
+        font-size: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .imgtop{
+        display: none;
+    }
+
+    nav a{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: aquamarine;
+        text-align: center;
+        text-decoration: none;
+        margin-left: -8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h2{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    ul{
+        list-style-type: none;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
