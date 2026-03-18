@@ -1,93 +1,90 @@
-@import url('https://fonts.googleapis.com/css?famili-Pacifico');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
     background-color: beige;
-
     max-width: 1000px;
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto;
     padding: 30px; 
-    
-    
+    font-family: Arial, sans-serif;
 }
 
-.Upphov, .GDPR, .Säkerhet, .Elektroniskt {
-   text-align: left;
-   border-radius: 20px;
-   border-style: solid;
-   margin-left: left;
-   margin-right: auto;
-   max-width: 40%;
-   padding: 1px 1px 1px 8px;
-   background-color: azure;
-   border-color: darkslategray;
-   margin-top: 10px;
+/* Fixat stavning: .Elektronisk istället för .Elektroniskt */
+.Upphov, .GDPR, .Säkerhet, .Elektronisk {
+    text-align: left;
+    border-radius: 20px;
+    border: 2px solid darkslategray;
+    margin: 10px auto 10px 0;
+    max-width: 40%;
+    padding: 10px 15px;
+    background-color: azure;
 }
 
-nav a{text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-header, main
-{
+header, main {
     background-color: cadetblue;
     border-radius: 20px;
     padding: 20px;
     min-height: 100px;
 }
 
-nav li {display: inline;
-    margin-left: 10px;}
-
-h1, h2{
-    font-family: 'Times New Roman', Times, serif, cursive;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-main{
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+h1, h2 {
+    /* Pacifico från Google Fonts som du ville ha */
+    font-family: 'Pacifico', cursive, 'Times New Roman', serif;
+}
+
+main {
     margin-top: 20px;
     line-height: 1.5em;
 }
 
-
-@media only screen and (max-width : 800px){
-    *{
-        margin: 0;
-        padding: 0;
+/* --- Mobilanpassning --- */
+@media only screen and (max-width: 800px) {
+    body {
+        padding: 10px;
     }
-    h1{
+
+    h1 {
         text-align: center;
         background-color: beige;
-        font-size: 50px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-
+        font-size: 35px;
+        padding: 20px 0;
     }
 
-    .imgtop{
-        display: none;
+    /* Gör rutorna bredare på mobilen */
+    .Upphov, .GDPR, .Säkerhet, .Elektronisk {
+        max-width: 100%;
+        margin-right: 0;
     }
 
-    nav a{
-        display: inline-block;
+    nav a {
+        display: block;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         background-color: aquamarine;
+        color: #333;
         text-align: center;
-        text-decoration: none;
-        margin-left: -8px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 0;
     }
 
-    h2{
-        margin-top: 10px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    ul{
-        list-style-type: none;
-        margin-top: 20px;
-        margin-left: 0px;
+    nav li {
+        display: block;
+        margin: 0;
     }
 }
