@@ -4,78 +4,202 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lagar och regler</title>
-    <link rel="stylesheet" type="text/css" href="css/standard.css" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            background-color: beige;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: cadetblue;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        h1, h2 {
+            font-family: 'Pacifico', cursive, 'Times New Roman', serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: aquamarine;
+        }
+
+        main {
+            background-color: cadetblue;
+            border-radius: 20px;
+            padding: 20px;
+            line-height: 1.5em;
+        }
+
+        .Upphov, .GDPR, .Säkerhet, .Elektronisk {
+            text-align: left;
+            border-radius: 20px;
+            border: 2px solid darkslategray;
+            margin: 10px 0;
+            max-width: 90%; 
+            padding: 15px;
+            background-color: azure;
+            color: #333;
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: white;
+                color: cadetblue;
+                font-size: 30px;
+                padding: 15px;
+                border-radius: 10px;
+            }
+
+            nav a {
+                display: block;
+                width: 100%;
+                margin-bottom: 5px;
+                background-color: aquamarine;
+                color: #333;
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 5px;
+            }
+
+            nav li {
+                display: block;
+                margin: 0;
+            }
+
+            .Upphov, .GDPR, .Säkerhet, .Elektronisk {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Lagar & bestämmelser</h1>
         <nav>
             <ul>
-                <li><a href="Upphov.html">Upphovsrättslagen</a></li>
-                <li><a href="gdpr.html">GDPR</a></li>
-                <li><a href="Elektronisk.html">LEK</a></li>
-                <li><a href="sak.html">Säkerhet</a></li>
+                <li><a href="#upphov">Upphovsrätt</a></li>
+                <li><a href="#gdpr">GDPR</a></li>
+                <li><a href="#elektronisk">LEK</a></li>
+                <li><a href="#sakerhet">Säkerhet</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="Upphov">
+        <div class="Upphov" id="upphov">
             <h2>Upphovsrättslagen</h2>
             <h3>Vad menas med upphovsrätt?</h3>
-            <p>Svar här...</p>
+            <p>Svar: En lagstiftning som ger skaparen av ett verk 
+                (text, bild, musik, kod) ensamrätt att styra över 
+                hur det används och sprids. Den uppstår automatiskt 
+                vid skapandet om verket når en viss originalitet (verkshöjd).</p>
 
             <h3>Hur länge gäller upphovsrätten?</h3>
-            <p>Svar här...</p>
+            <p>Svar: Huvudregeln är att den gäller under 
+                upphovspersonens hela livstid och ytterligare 
+                70 år efter dennes död. Därefter blir verket 
+                "fritt" och får användas av vem som helst.</p>
 
-            <h3>Är det någon skillnad vad gäller rättighet mellan att använda andras material för privat bruk och för offentligt bruk?</h3>
-            <p>Svar här...</p>
+            <h3>Är det någon skillnad mellan privat och offentligt bruk?</h3>
+            <p>Svar: För privat bruk får du kopiera enstaka ex till dig själv/familjen. 
+                Offentligt bruk (sociala medier, hemsidor, företag) kräver nästan 
+                alltid tillstånd eller licens.</p>
 
-            <h3>Får man använda en bild på en annan person utan dennes medgivande?</h3>
-            <p>Svar här...</p>
+            <h3>Får man använda bild på en annan person utan medgivande?</h3>
+            <p>Svar: Kräver oftast samtycke enligt GDPR och "Lagen om namn 
+                och bild i reklam" om personen kan identifieras, särskilt i 
+                kommersiella syften.</p>
 
-            <h3>Förklara vad som menas med Creative Commons</h3>
-            <p>Svar här...</p> 
+            <h3>Förklara Creative Commons</h3>
+            <p>Svar: Ett standardiserat licenssystem där skaparen på förhand 
+                ger tillåtelse till andra att använda verket under specifika 
+                villkor (t.ex. att man måste ange källan).</p> 
         </div>
         
-        <div class="GDPR">
+        <div class="GDPR" id="gdpr">
             <h2>GDPR</h2>
-            <h3>Beskriv vad GDPR är och vad den är till för att skydda.</h3>
-            <p>Svar här...</p>
+            <h3>Vad är GDPR och vad skyddar den?</h3>
+            <p>Svar: En EU-lag som skyddar individers integritet genom                 
+                att reglera hur personuppgifter hanteras. Den ger dig 
+                rätt att veta vilken data som finns om dig.</p>
 
             <h3>Gäller GDPR i hela världen?</h3>
-            <p>Svar här...</p>
+            <p>Svar: Nej, men den gäller alla organisationer i hela 
+                världen som hanterar data om personer som befinner sig inom EU.</p>
 
             <h3>Vad är en personuppgift?</h3>
-            <p>Svar här...</p>
+            <p>Svar: All data som kan kopplas till en levande person, t.ex. 
+                namn, bild, IP-adress eller e-post.</p>
 
             <h3>Vad menas med "känsliga" personuppgifter?</h3>
-            <p>Svar här...</p>
+            <p>Svar: Data om t.ex. hälsa, politisk åsikt, sexuell läggning eller 
+                religion. Dessa kräver extra starkt skydd och får sällan lagras utan tvingande skäl.</p>
 
-            <h3>Ett företag som samlar in uppgifter om dig, vad måste de tänka på?</h3>
-            <p>Svar här...</p>
+            <h3>Vad måste företag tänka på vid insamling?</h3>
+            <p>Svar: De måste ha en laglig grund (t.ex. samtycke), bara samla in det som behövs 
+                (dataminimering) och informera tydligt om syftet.</p>
 
-            <h3>Får de lagra uppgifterna om dig en längre period?</h3>
-            <p>Svar här...</p>
+            <h3>Får de lagra uppgifter en längre period?</h3>
+            <p>Svar: Uppgifter får bara sparas så länge de behövs för det ursprungliga 
+                syftet. Sedan ska de raderas (lagringsbegränsning).</p>
 
-            <h3>Nämn exempel på när du som privatperson skulle kunna bryta mot GDPR.</h3>
-            <p>Svar här...</p>  
+            <h3>Exempel på när privatpersoner bryter mot GDPR?</h3>
+            <p>Svar: Att sprida kränkande bilder eller personuppgifter om andra på öppna nätforum 
+                kan bryta mot GDPR/integritetsskyddet.</p>  
         </div>
         
-        <div class="Säkerhet">
+        <div class="Säkerhet" id="sakerhet">
             <h2>Säkerhet</h2>
             <h3>Hur hanterar man lösenord på ett säkert sätt?</h3>
-            <p>Svar här...</p>
+            <p>Svar: Använd unika, komplexa lösenord för varje tjänst via en lösenordshanterare. 
+                Det absolut viktigaste är att aktivera tvåfaktorsautentisering (2FA) som 
+                kräver en extra kod vid inloggning.</p>
         </div>
 
-        <div class="Elektronisk">
+        <div class="Elektronisk" id="elektronisk">
             <h2>Elektronisk Kommunikation</h2>
-            <h3>Vad är en "kaka" (cookie) och vad används de till?</h3>
-            <p>Svar här...</p>
+            <h3>Vad är en "kaka" (cookie)?</h3>
+            <p>Svar: Små textfiler som sparas på din enhet för att webbplatser ska känna igen 
+                dig, komma ihåg inställningar eller följa ditt surfbeteende.</p>
 
-            <h3>Vad säger lagen (LEK) om hanteringen av kakor?</h3>
-            <p>Svar här...</p>   
+            <h3>Vad säger lagen (LEK) om kakor?</h3>
+            <p>Svar: Webbplatsägare måste informera om cookies och få användarens aktiva samtycke 
+                innan icke-nödvändiga kakor (t.ex. för reklam/statistik) sparas.</p>   
         </div>
     </main>
+
 </body>
 </html>
